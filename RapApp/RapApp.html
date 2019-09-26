@@ -1,0 +1,67 @@
+<!--
+    Copyrite Phillip Otey 8/31/2019
+    This is the Rap App where you can become a famous rapper.
+    
+-->
+
+<!--
+    to do:
+        drop down menu background picture (grey with style border?)
+        css backgrounds
+        center everything
+        fade in faid out bacground change animation
+
+-->
+<!DOCTYPE html5>
+    <head>
+        <script type="text/javascript" src="Jscript.js"></script>
+        <link rel="stylesheet" type="text/css" href="Style.css">
+    </head>
+        
+    <title>
+        Rap App
+    </title>
+    <body id="bod" class="">
+        <div class="selectMenu">
+                <select id = "listVal">
+                    <option value="Day">Day</option>
+                    <option value="Night">Night</option>
+                    <option value="CyberForest">Cyber Forest</option>
+                    <option value="Sunburst" selected="selected">Sunburst</option>
+                    <option value="SurfTheWeb">Surf the web</option>
+                </select>
+        </div>
+            <p class="square1">
+                    Rhyme results are provided by <a href="https://rhymebrain.com">RhymeBrain.com</a>
+            </p>
+        <h1>
+            Rap App
+        </h1>
+        <h1 class="blackText">
+                Rap App
+        </h1>
+        <div class="positionUp"> <!--textcolor-->
+        <p>
+            <form action="javascript:RhymeBrainSubmit()">
+                <input type=text id="RhymeBrainInput">
+                <input type=submit value="Rhyme">
+            </form>
+            <script type="text/javascript">
+                var RhymeBrainMaxResults = 50;
+            </script>
+            <script type="text/javascript" src="https://rhymebrain.com/external.js"></script>            
+        </p>
+        </div>
+    
+        <p class="p2 center textcolor positionUp">
+                Write lyrics!
+        </p>
+        <form class="positionUp">
+            <textarea name="message" rows="10" cols="30">Lifes begin
+from rhymes within
+
+            </textarea>
+        </form>
+    
+        
+    </body>
